@@ -1,0 +1,4 @@
+
+lsquid:S1450"RRemove the "fab" field and declare it as a local variable in the relevant methods.(ÈÃ‡Æøÿÿÿÿ
+isquid:S00116"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù¦€şÿÿÿÿ
+csquid:MaximumInheritanceDepth"<This class has 8 parents which is greater than 5 authorized.(²Ú±

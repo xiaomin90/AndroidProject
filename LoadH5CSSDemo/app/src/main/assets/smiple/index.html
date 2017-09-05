@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Little Monster (SVG & CSS3 Animations)</title>
+  
+  
+  
+      <link rel="stylesheet" href="file:///android_asset/smiple/css/style.css"\>
+
+  
+</head>
+
+<body>
+  <div class="cntr">
+  <div class="cntr-innr">
+    <svg height="240" width="200">
+      <defs>
+        <clipPath id="clip">
+          <rect x="0" y="-500" width="200" height="700" />
+          <ellipse cx="100" cy="200" rx="95" ry="33" />
+        </clipPath>
+        <clipPath id="clipHat">
+          <rect x="0" y="0" width="200" height="120" />
+        </clipPath>
+      </defs>
+      <ellipse cx="100" cy="200" rx="95" ry="35" style="fill:#fff;stroke:#000;stroke-width:5" />
+      <g clip-path="url(#clip)">
+        <g id="figure">
+          <ellipse cx="100" cy="130" rx="60" ry="60" style="fill:#000;" />
+          <rect x="40" y="130" width="120" height="200" style="fill:#000;" />
+          <ellipse cx="100" cy="130" rx="55" ry="55" style="fill:#fff;" />
+          <rect x="45" y="130" width="110" height="200" style="fill:#fff;" />
+          <g class="face">
+            <circle class="eye" cx="80" cy="140" r="5" style="fill:#000;" />
+            <circle class="eye" cx="120" cy="140" r="5" style="fill:#000;" />
+            <ellipse class="mouth" cx="100" cy="165" rx="7" ry="5" style="fill:#000;" />
+          </g>
+        </g>
+        <g class="hat">
+          <g class="hat-tilt" clip-path="url(#clipHat)">
+            <circle cx="100" cy="120" r="60" style="fill:#fff;stroke:#000;stroke-width:5;" />
+            <rect x="30" y="108" rx="5" ry="5" width="140" height="10" style="fill:#fff;stroke:#000;stroke-width:5;" />
+          </g>
+        </g>
+       </g>
+    </svg>
+    <p>Hover to make him hide.</p>
+    <p>Only works in Chrome and Safari.</p>
+  </div>
+</div>
+  
+  
+</body>
+</html>
